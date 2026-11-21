@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portafolio académico de Estadística de Isaac Chávez. Universidad Central del Ecuador. Evidencias de aprendizaje, hoja de vida y certificaciones.">
+  <meta name="description" content="Portafolio académico de Estadística de Isaac Chávez. Universidad Central del Ecuador. Portafolio en Notion, hoja de vida y certificación en Power BI.">
   <meta name="theme-color" content="#101d32">
   <title>Isaac Chávez · Portafolio de Estadística</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
@@ -25,9 +25,8 @@
         Menú <span aria-hidden="true">☰</span>
       </button>
       <nav id="nav" aria-label="Navegación principal">
-        <a href="#perfil">Perfil y CV</a>
-        <a href="#evidencias">Portafolio Notion</a>
-        <a href="#certificaciones">Certificaciones</a>
+        <a href="#accesos">Accesos principales</a>
+        <a href="#perfil">Perfil</a>
         <a href="#asignatura">Asignatura</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -38,7 +37,7 @@
   </header>
 
   <main id="contenido">
-    <!-- PORTADA CON ACCESOS DIRECTOS INMEDIATOS -->
+    <!-- PORTADA -->
     <section class="hero" id="inicio" aria-labelledby="titulo">
       <div class="wrap">
         <div class="hero-grid">
@@ -46,21 +45,7 @@
             <p class="eyebrow"><span class="status-dot"></span> PORTAFOLIO DIGITAL · CUARTO SEMESTRE</p>
             <h1 id="titulo">Datos que se<br>convierten en<br><em>conocimiento.</em></h1>
             <p class="hero-name">Isaac Chávez <span>/ Estadística</span></p>
-            <p class="hero-intro">Espacio académico con acceso directo a mi portafolio de Estadística en Notion, hoja de vida y formación complementaria.</p>
-
-            <!-- Accesos principales visibles sin necesidad de bajar -->
-            <div class="hero-actions">
-              <!-- TODO: Reemplaza este href cuando tengas el enlace definitivo de Estadística en Notion -->
-              <a class="button primary" href="https://www.notion.so/Portafolio-Acad-mico-de-Matem-ticas-9253aaeec1224d49874f3a100d727688?source=copy_link" target="_blank" rel="noopener noreferrer">
-                Portafolio Estadística (Notion) <span aria-hidden="true">↗</span>
-              </a>
-              <a class="button secondary" href="https://drive.google.com/file/d/1NHvATTXsvqHeRpTMMopwavdzNLYsB3RX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                Hoja de vida <span aria-hidden="true">↗</span>
-              </a>
-              <a class="text-link light" href="https://drive.google.com/file/d/1VCEN4g-Rso3xqHl7Y8VoDvK5FZIxfyoo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                Certificado Power BI <span aria-hidden="true">↗</span>
-              </a>
-            </div>
+            <p class="hero-intro">Espacio académico con acceso directo a mi portafolio de Estadística en Notion, mi hoja de vida y mi certificado de Microsoft Power BI.</p>
           </div>
 
           <figure class="hero-visual">
@@ -116,23 +101,78 @@
       </div>
     </section>
 
-    <!-- 01 / PERFIL Y HOJA DE VIDA (UBICADO AL INICIO) -->
+    <!-- 01 / TRES RECUADROS IGUALES DE ACCESO DIRECTO -->
+    <section class="section wrap" id="accesos" aria-labelledby="accesos-titulo">
+      <div class="section-heading reveal">
+        <p class="eyebrow section-label">01 / DOCUMENTACIÓN Y PORTAFOLIO</p>
+        <div class="heading-row">
+          <h2 id="accesos-titulo">Accesos principales<span class="accent">.</span></h2>
+          <p>Consulta directamente mi cuaderno de trabajo en Notion, mi hoja de vida y mi certificación técnica.</p>
+        </div>
+      </div>
+
+      <div class="learning-grid reveal">
+        <!-- RECUADRO 1: PORTAFOLIO DE ESTADÍSTICA (NOTION) -->
+        <article class="learning-item" style="display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span class="line-icon" aria-hidden="true">▤</span>
+              <span class="topic">NOTION · ASIGNATURA</span>
+            </div>
+            <h3>Portafolio de Estadística</h3>
+            <p>Apuntes, talleres, actividades y evidencias de aprendizaje organizadas por unidad en Notion.</p>
+          </div>
+          <!-- TODO: Reemplaza este href cuando tengas el enlace definitivo de Estadística en Notion -->
+          <a class="button primary" id="notion-link" href="https://www.notion.so/Portafolio-Acad-mico-de-Matem-ticas-9253aaeec1224d49874f3a100d727688?source=copy_link" target="_blank" rel="noopener noreferrer" style="width: 100%; justify-content: center;">
+            Abrir Portafolio <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <!-- RECUADRO 2: HOJA DE VIDA -->
+        <article class="learning-item" style="display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span class="line-icon" aria-hidden="true">⌘</span>
+              <span class="topic">CURRÍCULUM · PDF</span>
+            </div>
+            <h3>Hoja de Vida</h3>
+            <p>Perfil académico, formación en Pedagogía de la Informática (UCE), habilidades técnicas y experiencia.</p>
+          </div>
+          <a class="button primary" href="https://drive.google.com/file/d/1NHvATTXsvqHeRpTMMopwavdzNLYsB3RX/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="width: 100%; justify-content: center;">
+            Abrir Hoja de Vida <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <!-- RECUADRO 3: CERTIFICADO DE POWER BI -->
+        <article class="learning-item" style="display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span class="line-icon" aria-hidden="true">▥</span>
+              <span class="topic">CERTIFICACIÓN · 40 H</span>
+            </div>
+            <h3>Certificado Power BI</h3>
+            <p>Microsoft Power BI Básico Intermedio · Expertos Soluciones Integrales (Ministerio de Trabajo · Cód. MDT-OC-1376418).</p>
+          </div>
+          <a class="button primary" href="https://drive.google.com/file/d/1VCEN4g-Rso3xqHl7Y8VoDvK5FZIxfyoo/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="width: 100%; justify-content: center;">
+            Abrir Certificado <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 / PERFIL ACADÉMICO -->
     <section class="profile-section section" id="perfil" aria-labelledby="perfil-titulo">
       <div class="wrap profile-grid">
         <div class="profile-copy reveal">
-          <p class="eyebrow">01 / PERFIL Y HOJA DE VIDA</p>
+          <p class="eyebrow">02 / PERFIL ACADÉMICO</p>
           <h2 id="perfil-titulo">Informática y Educación.<br>Un mismo horizonte.</h2>
           <p>Soy Isaac Chávez, estudiante de cuarto semestre de Pedagogía de las Ciencias Experimentales, Informática, en la Universidad Central del Ecuador.</p>
-          <p>Aquí puedes revisar directamente mi hoja de vida actualizada junto con mis espacios de trabajo académico y certificaciones.</p>
+          <p>Combino el desarrollo de herramientas digitales con el análisis estadístico para transformar datos en información clara y útil en contextos educativos.</p>
           <div class="profile-tags">
             <span>Educación</span>
             <span>Informática</span>
             <span>Estadística</span>
-          </div>
-          <div id="cv-action">
-            <a class="button primary" href="https://drive.google.com/file/d/1NHvATTXsvqHeRpTMMopwavdzNLYsB3RX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              Ver hoja de vida <span aria-hidden="true">↗</span>
-            </a>
+            <span>Power BI</span>
           </div>
         </div>
         <aside class="profile-card">
@@ -146,70 +186,10 @@
       </div>
     </section>
 
-    <!-- 02 / PORTAFOLIO DE ESTADÍSTICA EN NOTION -->
-    <section class="section evidence-section" id="evidencias" aria-labelledby="evidencias-titulo">
-      <div class="wrap">
-        <div class="section-heading reveal">
-          <p class="eyebrow section-label">02 / BITÁCORA DE ESTADÍSTICA</p>
-          <div class="heading-row">
-            <h2 id="evidencias-titulo">Evidencias de aprendizaje<span class="accent">.</span></h2>
-            <p>Accede al espacio central en Notion donde se organizan los apuntes, talleres y unidades de Estadística.</p>
-          </div>
-        </div>
-
-        <div class="evidence-toolbar" id="evidence-toolbar" hidden>
-          <label for="unit-filter">Filtrar por unidad</label>
-          <select id="unit-filter"><option value="">Todas las unidades</option></select>
-          <span id="evidence-count" aria-live="polite"></span>
-        </div>
-
-        <div id="evidence-grid" class="evidence-grid"></div>
-
-        <div class="empty-state" id="evidence-empty">
-          <span class="empty-icon" aria-hidden="true">▤</span>
-          <div>
-            <p class="micro">CUADERNO DIGITAL EN NOTION</p>
-            <h3>Portafolio de Estadística</h3>
-            <p>Consulta las actividades, talleres y recursos organizados directamente en mi espacio de Notion.</p>
-            <div style="margin-top: 16px;">
-              <a class="button primary" id="notion-link" href="https://www.notion.so/Portafolio-Acad-mico-de-Matem-ticas-9253aaeec1224d49874f3a100d727688?source=copy_link" target="_blank" rel="noopener noreferrer">
-                Abrir portafolio en Notion <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-          <span class="empty-number" aria-hidden="true">UCE</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 03 / CERTIFICACIONES -->
-    <section class="section wrap" id="certificaciones" aria-labelledby="certificaciones-titulo">
-      <div class="section-heading reveal">
-        <p class="eyebrow section-label">03 / FORMACIÓN COMPLEMENTARIA</p>
-        <div class="heading-row">
-          <h2 id="certificaciones-titulo">Certificaciones<span class="accent">.</span></h2>
-          <p>Respaldo oficial de cursos y capacitación técnica continua.</p>
-        </div>
-      </div>
-      <div class="cert-grid" id="cert-grid">
-        <article class="cert-card">
-          <span class="cert-icon" aria-hidden="true">▥</span>
-          <div>
-            <span class="badge">Certificado · 40 horas</span>
-            <h3>Microsoft Power BI Básico Intermedio</h3>
-            <p>Expertos Soluciones Integrales · Ministerio de Trabajo del Ecuador (12 de noviembre de 2026 · Cód. MDT-OC-1376418).</p>
-            <a class="text-link" href="https://drive.google.com/file/d/1VCEN4g-Rso3xqHl7Y8VoDvK5FZIxfyoo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-              Ver certificado oficial ↗
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- 04 / SOBRE LA ASIGNATURA -->
+    <!-- 03 / SOBRE LA ASIGNATURA -->
     <section class="section wrap" id="asignatura" aria-labelledby="asignatura-titulo">
       <div class="section-heading reveal">
-        <p class="eyebrow section-label">04 / LA ASIGNATURA</p>
+        <p class="eyebrow section-label">03 / LA ASIGNATURA</p>
         <div class="heading-row">
           <h2 id="asignatura-titulo">Comprender los datos.<br>Fundamentar decisiones.</h2>
           <p>La Estadística permite recoger, organizar, analizar e interpretar información para comprender lo que ocurre y formular mejores preguntas.</p>
@@ -237,11 +217,11 @@
       </div>
     </section>
 
-    <!-- 05 / CONTACTO -->
+    <!-- 04 / CONTACTO -->
     <section class="contact-section" id="contacto" aria-labelledby="contacto-titulo">
       <div class="wrap contact-inner">
         <div>
-          <p class="eyebrow section-label">05 / CONECTEMOS</p>
+          <p class="eyebrow section-label">04 / CONECTEMOS</p>
           <h2 id="contacto-titulo">El aprendizaje se comparte.</h2>
           <p>Encuentra aquí mis perfiles y espacios académicos.</p>
         </div>
@@ -261,8 +241,7 @@
       </div>
       <nav aria-label="Navegación del pie de página">
         <a href="#inicio">Volver al inicio ↑</a>
-        <a href="#perfil">Hoja de vida</a>
-        <a href="#certificaciones">Certificaciones</a>
+        <a href="#accesos">Accesos principales</a>
         <a href="https://github.com/ISAACJC120/portafolio-estadistica" target="_blank" rel="noopener noreferrer">Código del sitio ↗</a>
       </nav>
     </div>
