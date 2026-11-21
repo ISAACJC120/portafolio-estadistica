@@ -3,29 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portafolio académico de Estadística de Isaac Chávez. Universidad Central del Ecuador. Evidencias de aprendizaje y laboratorio estadístico interactivo.">
+  <meta name="description" content="Portafolio académico de Estadística de Isaac Chávez. Universidad Central del Ecuador. Evidencias de aprendizaje, hoja de vida y certificaciones.">
   <meta name="theme-color" content="#101d32">
   <title>Isaac Chávez · Portafolio de Estadística</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
   <script src="./datos.js" defer></script>
-  <script src="./estadistica.js" defer></script>
   <script src="./qrcode.min.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#inicio" aria-label="Isaac Chávez, inicio"><span class="brand-symbol" aria-hidden="true">ııı</span><span>IC<span class="brand-divider"> / </span><span class="brand-sub">ESTADÍSTICA</span></span></a>
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav">Menú <span aria-hidden="true">☰</span></button>
+      <a class="brand" href="#inicio" aria-label="Isaac Chávez, inicio">
+        <span class="brand-symbol" aria-hidden="true">ııı</span>
+        <span>IC<span class="brand-divider"> / </span><span class="brand-sub">ESTADÍSTICA</span></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav">
+        Menú <span aria-hidden="true">☰</span>
+      </button>
       <nav id="nav" aria-label="Navegación principal">
-        <a href="#asignatura">Asignatura</a><a href="#evidencias">Evidencias</a><a href="#laboratorio">Laboratorio</a><a href="#perfil">Perfil</a><a href="#contacto">Contacto</a>
+        <a href="#perfil">Perfil y CV</a>
+        <a href="#evidencias">Portafolio Notion</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#asignatura">Asignatura</a>
+        <a href="#contacto">Contacto</a>
       </nav>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Activar modo oscuro" title="Cambiar tema"><span aria-hidden="true">◐</span></button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Activar modo oscuro" title="Cambiar tema">
+        <span aria-hidden="true">◐</span>
+      </button>
     </div>
   </header>
+
   <main id="contenido">
+    <!-- PORTADA CON ACCESOS DIRECTOS INMEDIATOS -->
     <section class="hero" id="inicio" aria-labelledby="titulo">
       <div class="wrap">
         <div class="hero-grid">
@@ -33,79 +46,226 @@
             <p class="eyebrow"><span class="status-dot"></span> PORTAFOLIO DIGITAL · CUARTO SEMESTRE</p>
             <h1 id="titulo">Datos que se<br>convierten en<br><em>conocimiento.</em></h1>
             <p class="hero-name">Isaac Chávez <span>/ Estadística</span></p>
-            <p class="hero-intro">Un espacio para explorar, aprender y conectar el análisis de datos con la Educación y la Informática.</p>
-            <div class="hero-actions"><a class="button primary" href="#evidencias">Explorar evidencias <span aria-hidden="true">↗</span></a><a class="text-link light" href="#laboratorio">Ir al laboratorio <span aria-hidden="true">→</span></a></div>
+            <p class="hero-intro">Espacio académico con acceso directo a mi portafolio de Estadística en Notion, hoja de vida y formación complementaria.</p>
+
+            <!-- Accesos principales visibles sin necesidad de bajar -->
+            <div class="hero-actions">
+              <!-- TODO: Reemplaza este href cuando tengas el enlace definitivo de Estadística en Notion -->
+              <a class="button primary" href="https://www.notion.so/Portafolio-Acad-mico-de-Matem-ticas-9253aaeec1224d49874f3a100d727688?source=copy_link" target="_blank" rel="noopener noreferrer">
+                Portafolio Estadística (Notion) <span aria-hidden="true">↗</span>
+              </a>
+              <a class="button secondary" href="https://drive.google.com/file/d/1NHvATTXsvqHeRpTMMopwavdzNLYsB3RX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                Hoja de vida <span aria-hidden="true">↗</span>
+              </a>
+              <a class="text-link light" href="https://drive.google.com/file/d/1VCEN4g-Rso3xqHl7Y8VoDvK5FZIxfyoo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                Certificado Power BI <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
+
           <figure class="hero-visual">
-            <div class="visual-top"><span class="micro">DE LOS DATOS A LAS IDEAS</span><span class="visual-mark" aria-hidden="true">∑</span></div>
+            <div class="visual-top">
+              <span class="micro">DE LOS DATOS A LAS IDEAS</span>
+              <span class="visual-mark" aria-hidden="true">∑</span>
+            </div>
             <svg class="hero-chart" viewBox="0 0 440 290" role="img" aria-labelledby="grafico-titulo grafico-desc">
-              <title id="grafico-titulo">Una distribución de frecuencias</title><desc id="grafico-desc">Ilustración de barras que crecen hacia el centro y disminuyen hacia los extremos. No representa resultados académicos.</desc>
-              <g stroke="#31445b" stroke-width="1"><path d="M24 45H420M24 95H420M24 145H420M24 195H420M24 245H420"/></g>
-              <g fill="#68e0c1"><rect x="39" y="205" width="36" height="40" rx="5" opacity=".45"/><rect x="91" y="170" width="36" height="75" rx="5" opacity=".65"/><rect x="143" y="107" width="36" height="138" rx="5" opacity=".85"/><rect x="195" y="62" width="36" height="183" rx="5"/><rect x="247" y="108" width="36" height="137" rx="5" opacity=".85"/><rect x="299" y="163" width="36" height="82" rx="5" opacity=".65"/><rect x="351" y="211" width="36" height="34" rx="5" opacity=".45"/></g>
+              <title id="grafico-titulo">Una distribución de frecuencias</title>
+              <desc id="grafico-desc">Ilustración de barras que crecen hacia el centro y disminuyen hacia los extremos.</desc>
+              <g stroke="#31445b" stroke-width="1">
+                <path d="M24 45H420M24 95H420M24 145H420M24 195H420M24 245H420"/>
+              </g>
+              <g fill="#68e0c1">
+                <rect x="39" y="205" width="36" height="40" rx="5" opacity=".45"/>
+                <rect x="91" y="170" width="36" height="75" rx="5" opacity=".65"/>
+                <rect x="143" y="107" width="36" height="138" rx="5" opacity=".85"/>
+                <rect x="195" y="62" width="36" height="183" rx="5"/>
+                <rect x="247" y="108" width="36" height="137" rx="5" opacity=".85"/>
+                <rect x="299" y="163" width="36" height="82" rx="5" opacity=".65"/>
+                <rect x="351" y="211" width="36" height="34" rx="5" opacity=".45"/>
+              </g>
               <path d="M57 182C110 164 155 40 213 40S320 174 369 190" stroke="#b1c4f8" stroke-width="2" stroke-dasharray="5 6" fill="none"/>
-              <circle cx="213" cy="40" r="6" fill="#b1c4f8"/><path d="M213 52V255" stroke="#b1c4f8" stroke-opacity=".5" stroke-dasharray="3 5"/>
+              <circle cx="213" cy="40" r="6" fill="#b1c4f8"/>
+              <path d="M213 52V255" stroke="#b1c4f8" stroke-opacity=".5" stroke-dasharray="3 5"/>
               <text x="213" y="278" text-anchor="middle" fill="#adbed2" font-family="monospace" font-size="12">OBSERVAR · ANALIZAR · INTERPRETAR</text>
             </svg>
             <figcaption><span class="tiny-dot"></span> Visualización ilustrativa · Sin datos académicos</figcaption>
-            <div class="visual-note"><span aria-hidden="true">x̄</span><p>Cada dato tiene contexto.<br><strong>Cada análisis, una pregunta.</strong></p></div>
+            <div class="visual-note">
+              <span aria-hidden="true">x̄</span>
+              <p>Cada dato tiene contexto.<br><strong>Cada análisis, una pregunta.</strong></p>
+            </div>
           </figure>
         </div>
+
         <div class="academic-strip">
-          <div><span class="micro">UNIVERSIDAD</span><strong>Universidad Central del Ecuador</strong><p>Facultad de Filosofía, Letras y Ciencias de la Educación</p></div>
-          <div><span class="micro">CARRERA</span><strong>Pedagogía de las Ciencias Experimentales, Informática</strong><p>Cuarto semestre</p></div>
-          <div><span class="micro">ASIGNATURA Y DOCENTE</span><strong>Estadística · Mgtr. Diego Tipán</strong><p id="periodo">Período académico por definir</p></div>
+          <div>
+            <span class="micro">UNIVERSIDAD</span>
+            <strong>Universidad Central del Ecuador</strong>
+            <p>Facultad de Filosofía, Letras y Ciencias de la Educación</p>
+          </div>
+          <div>
+            <span class="micro">CARRERA</span>
+            <strong>Pedagogía de las Ciencias Experimentales, Informática</strong>
+            <p>Cuarto semestre</p>
+          </div>
+          <div>
+            <span class="micro">ASIGNATURA Y DOCENTE</span>
+            <strong>Estadística · Mgtr. Diego Tipán</strong>
+            <p id="periodo">Período académico 2026</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- 01 / PERFIL Y HOJA DE VIDA (UBICADO AL INICIO) -->
+    <section class="profile-section section" id="perfil" aria-labelledby="perfil-titulo">
+      <div class="wrap profile-grid">
+        <div class="profile-copy reveal">
+          <p class="eyebrow">01 / PERFIL Y HOJA DE VIDA</p>
+          <h2 id="perfil-titulo">Informática y Educación.<br>Un mismo horizonte.</h2>
+          <p>Soy Isaac Chávez, estudiante de cuarto semestre de Pedagogía de las Ciencias Experimentales, Informática, en la Universidad Central del Ecuador.</p>
+          <p>Aquí puedes revisar directamente mi hoja de vida actualizada junto con mis espacios de trabajo académico y certificaciones.</p>
+          <div class="profile-tags">
+            <span>Educación</span>
+            <span>Informática</span>
+            <span>Estadística</span>
+          </div>
+          <div id="cv-action">
+            <a class="button primary" href="https://drive.google.com/file/d/1NHvATTXsvqHeRpTMMopwavdzNLYsB3RX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              Ver hoja de vida <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <span class="profile-monogram" aria-hidden="true">IC<span>↗</span></span>
+          <h3>Isaac Chávez</h3>
+          <p>Estudiante · Cuarto semestre</p>
+          <div class="profile-rule"></div>
+          <p>Facultad de Filosofía, Letras<br>y Ciencias de la Educación</p>
+          <strong>Universidad Central del Ecuador</strong>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 02 / PORTAFOLIO DE ESTADÍSTICA EN NOTION -->
+    <section class="section evidence-section" id="evidencias" aria-labelledby="evidencias-titulo">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow section-label">02 / BITÁCORA DE ESTADÍSTICA</p>
+          <div class="heading-row">
+            <h2 id="evidencias-titulo">Evidencias de aprendizaje<span class="accent">.</span></h2>
+            <p>Accede al espacio central en Notion donde se organizan los apuntes, talleres y unidades de Estadística.</p>
+          </div>
+        </div>
+
+        <div class="evidence-toolbar" id="evidence-toolbar" hidden>
+          <label for="unit-filter">Filtrar por unidad</label>
+          <select id="unit-filter"><option value="">Todas las unidades</option></select>
+          <span id="evidence-count" aria-live="polite"></span>
+        </div>
+
+        <div id="evidence-grid" class="evidence-grid"></div>
+
+        <div class="empty-state" id="evidence-empty">
+          <span class="empty-icon" aria-hidden="true">▤</span>
+          <div>
+            <p class="micro">CUADERNO DIGITAL EN NOTION</p>
+            <h3>Portafolio de Estadística</h3>
+            <p>Consulta las actividades, talleres y recursos organizados directamente en mi espacio de Notion.</p>
+            <div style="margin-top: 16px;">
+              <a class="button primary" id="notion-link" href="https://www.notion.so/Portafolio-Acad-mico-de-Matem-ticas-9253aaeec1224d49874f3a100d727688?source=copy_link" target="_blank" rel="noopener noreferrer">
+                Abrir portafolio en Notion <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+          <span class="empty-number" aria-hidden="true">UCE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / CERTIFICACIONES -->
+    <section class="section wrap" id="certificaciones" aria-labelledby="certificaciones-titulo">
+      <div class="section-heading reveal">
+        <p class="eyebrow section-label">03 / FORMACIÓN COMPLEMENTARIA</p>
+        <div class="heading-row">
+          <h2 id="certificaciones-titulo">Certificaciones<span class="accent">.</span></h2>
+          <p>Respaldo oficial de cursos y capacitación técnica continua.</p>
+        </div>
+      </div>
+      <div class="cert-grid" id="cert-grid">
+        <article class="cert-card">
+          <span class="cert-icon" aria-hidden="true">▥</span>
+          <div>
+            <span class="badge">Certificado · 40 horas</span>
+            <h3>Microsoft Power BI Básico Intermedio</h3>
+            <p>Expertos Soluciones Integrales · Ministerio de Trabajo del Ecuador (12 de noviembre de 2026 · Cód. MDT-OC-1376418).</p>
+            <a class="text-link" href="https://drive.google.com/file/d/1VCEN4g-Rso3xqHl7Y8VoDvK5FZIxfyoo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              Ver certificado oficial ↗
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 / SOBRE LA ASIGNATURA -->
     <section class="section wrap" id="asignatura" aria-labelledby="asignatura-titulo">
-      <div class="section-heading reveal"><p class="eyebrow section-label">01 / LA ASIGNATURA</p><div class="heading-row"><h2 id="asignatura-titulo">Comprender los datos.<br>Fundamentar decisiones.</h2><p>La Estadística permite recoger, organizar, analizar e interpretar información para comprender lo que ocurre y formular mejores preguntas.</p></div></div>
-      <div class="learning-grid reveal">
-        <article class="learning-item"><span class="line-icon" aria-hidden="true">▥</span><h3>Organizar la información</h3><p>Transformar observaciones en tablas y gráficos que permitan reconocer patrones y comunicar resultados.</p><span class="topic">DATOS + REPRESENTACIÓN</span></article>
-        <article class="learning-item"><span class="line-icon" aria-hidden="true">⌘</span><h3>Conectar con la Informática</h3><p>Procesar datos con herramientas digitales, programar cálculos y evaluar si una interpretación tiene sentido.</p><span class="topic">LÓGICA + ANÁLISIS</span></article>
-        <article class="learning-item"><span class="line-icon" aria-hidden="true">↗</span><h3>Aprender para enseñar</h3><p>Interpretar información educativa con criterio, teniendo en cuenta el contexto y los límites de los datos.</p><span class="topic">EDUCACIÓN + CRITERIO</span></article>
-      </div>
-      <details class="learning-objectives"><summary>Objetivos de aprendizaje propuestos</summary><ul><li>Organizar datos y construir representaciones comprensibles.</li><li>Calcular e interpretar medidas de tendencia central.</li><li>Relacionar el análisis de datos con situaciones educativas e informáticas.</li></ul><p>Estos objetivos orientan el portafolio y se ajustarán al programa de la asignatura.</p></details>
-    </section>
-
-    <section class="section evidence-section" id="evidencias" aria-labelledby="evidencias-titulo"><div class="wrap">
-      <div class="section-heading reveal"><p class="eyebrow section-label">02 / BITÁCORA ACADÉMICA</p><div class="heading-row"><h2 id="evidencias-titulo">Evidencias de aprendizaje<span class="accent">.</span></h2><p>Un recorrido por las actividades de la asignatura. Cada evidencia se conecta con su espacio de trabajo en Notion.</p></div></div>
-      <div class="evidence-toolbar" id="evidence-toolbar" hidden><label for="unit-filter">Filtrar por unidad</label><select id="unit-filter"><option value="">Todas las unidades</option></select><span id="evidence-count" aria-live="polite"></span></div>
-      <div id="evidence-grid" class="evidence-grid"></div>
-      <div class="empty-state" id="evidence-empty"><span class="empty-icon" aria-hidden="true">▤</span><div><p class="micro">UN RECORRIDO POR CONSTRUIR</p><h3>Las próximas evidencias estarán aquí.</h3><p>Este espacio se actualizará con las actividades y unidades reales de Estadística.</p><span class="badge">Pendientes de incorporar</span></div><span class="empty-number" aria-hidden="true">01—∞</span></div>
-      <p class="section-footnote">Las evidencias se abren en una pestaña nueva. <a id="notion-link" href="https://www.notion.so/Portafolio-Acad-mico-de-Matem-ticas-9253aaeec1224d49874f3a100d727688?source=copy_link" target="_blank" rel="noopener noreferrer">Ver portafolio de Estadística en Notion ↗</a></p>
-    </div></section>
-
-    <section class="section wrap" id="laboratorio" aria-labelledby="laboratorio-titulo">
-      <div class="section-heading reveal"><p class="eyebrow section-label">03 / ESTADÍSTICA INTERACTIVA</p><div class="heading-row"><h2 id="laboratorio-titulo">De la teoría<br>al experimento<span class="accent">.</span></h2><p>Introduce tus propios números y observa cómo cambian las medidas. Todo se calcula en tu navegador.</p></div></div>
-      <div class="lab-shell">
-        <form id="stats-form" class="lab-input" novalidate><div class="lab-title"><span class="lab-index">A</span><h3>Tu conjunto de datos</h3></div>
-          <label for="data-input">Números para analizar</label><textarea id="data-input" rows="5" maxlength="40000" placeholder="Ejemplo: 4; 6; 6; 8; 11" aria-describedby="data-help data-error" spellcheck="false"></textarea>
-          <p class="input-help" id="data-help">Separa los valores con <strong>espacios, punto y coma o saltos de línea</strong>. Para decimales usa punto o coma: <code>2,5; 3,5; 4</code>. Sin separadores de miles. Máximo 2000 datos; cada valor entre −10¹² y 10¹².</p>
-          <p id="data-error" class="error" role="alert" hidden></p>
-          <div class="lab-actions"><button class="button primary" type="submit">Calcular <span aria-hidden="true">→</span></button><button class="button secondary" id="load-example" type="button">Cargar ejemplo</button><button class="clear-button" id="clear-data" type="button">Limpiar</button></div>
-          <p class="privacy-note"><span aria-hidden="true">⌁</span> Tus datos no se envían ni se guardan.</p>
-        </form>
-        <div class="lab-results"><div class="lab-title"><span class="lab-index">B</span><h3>Lo que nos dicen los datos</h3></div>
-          <p class="results-caption" id="results-status" role="status" aria-live="polite">Introduce números o carga un ejemplo para comenzar.</p>
-          <div class="metrics"><div class="metric"><span>Media</span><output id="mean">—</output><p>La suma de los valores dividida entre su cantidad.</p></div><div class="metric"><span>Mediana</span><output id="median">—</output><p>El valor central de la lista ordenada.</p></div><div class="metric"><span>Moda</span><output id="mode">—</output><p>El valor o los valores que más se repiten.</p></div></div>
-          <div class="mini-metrics"><span>Datos <strong id="count">—</strong></span><span>Mínimo <strong id="minimum">—</strong></span><span>Máximo <strong id="maximum">—</strong></span><span>Rango <strong id="range">—</strong></span></div>
-          <p class="calculation-note">Resultados redondeados a un máximo de 6 decimales. La moda se determina con los valores originales.</p>
+      <div class="section-heading reveal">
+        <p class="eyebrow section-label">04 / LA ASIGNATURA</p>
+        <div class="heading-row">
+          <h2 id="asignatura-titulo">Comprender los datos.<br>Fundamentar decisiones.</h2>
+          <p>La Estadística permite recoger, organizar, analizar e interpretar información para comprender lo que ocurre y formular mejores preguntas.</p>
         </div>
       </div>
-      <div id="distribution" class="distribution" hidden><div class="distribution-heading"><div><p class="eyebrow section-label">HACER VISIBLE LA INFORMACIÓN</p><h3>Distribución de frecuencias</h3></div><p id="chart-note"></p></div><div id="frequency-chart" class="frequency-chart" role="img" aria-label="Gráfico de frecuencias. Los valores exactos se encuentran en la tabla inferior."></div><details class="frequency-details"><summary>Ver tabla de frecuencias y explicación</summary><p id="calculation-explanation"></p><div class="table-scroll" tabindex="0" role="region" aria-label="Tabla de frecuencias desplazable"><table><caption>Frecuencia de cada valor (sin agrupar)</caption><thead><tr><th scope="col">Valor</th><th scope="col">Frecuencia</th><th scope="col">Porcentaje</th></tr></thead><tbody id="frequency-table"></tbody></table></div></details></div>
-      <noscript><p class="error">Activa JavaScript para usar la calculadora y mostrar las evidencias. El resto del contenido académico permanece disponible.</p></noscript>
+      <div class="learning-grid reveal">
+        <article class="learning-item">
+          <span class="line-icon" aria-hidden="true">▥</span>
+          <h3>Organizar la información</h3>
+          <p>Transformar observaciones en tablas y gráficos que permitan reconocer patrones y comunicar resultados.</p>
+          <span class="topic">DATOS + REPRESENTACIÓN</span>
+        </article>
+        <article class="learning-item">
+          <span class="line-icon" aria-hidden="true">⌘</span>
+          <h3>Conectar con la Informática</h3>
+          <p>Procesar datos con herramientas digitales y evaluar con rigor si una interpretación tiene sentido.</p>
+          <span class="topic">LÓGICA + ANÁLISIS</span>
+        </article>
+        <article class="learning-item">
+          <span class="line-icon" aria-hidden="true">↗</span>
+          <h3>Aprender para enseñar</h3>
+          <p>Interpretar información educativa con criterio, teniendo en cuenta el contexto y los límites de los datos.</p>
+          <span class="topic">EDUCACIÓN + CRITERIO</span>
+        </article>
+      </div>
     </section>
 
-    <section class="profile-section section" id="perfil" aria-labelledby="perfil-titulo"><div class="wrap profile-grid">
-      <div class="profile-copy reveal"><p class="eyebrow">04 / PERFIL ACADÉMICO</p><h2 id="perfil-titulo">Informática y Educación.<br>Un mismo horizonte.</h2><p>Soy Isaac Chávez, estudiante de cuarto semestre de Pedagogía de las Ciencias Experimentales, Informática, en la Universidad Central del Ecuador.</p><p>Este portafolio reúne el espacio destinado a mis evidencias de Estadística y una herramienta para explorar sus conceptos mediante programación.</p><div class="profile-tags"><span>Educación</span><span>Informática</span><span>Estadística</span></div><div id="cv-action"><a class="button primary" href="https://drive.google.com/file/d/1NHvATTXsvqHeRpTMMopwavdzNLYsB3RX/view?usp=sharing" target="_blank" rel="noopener noreferrer">Ver hoja de vida <span aria-hidden="true">↗</span></a></div></div>
-      <aside class="profile-card"><span class="profile-monogram" aria-hidden="true">IC<span>↗</span></span><h3>Isaac Chávez</h3><p>Estudiante · Cuarto semestre</p><div class="profile-rule"></div><p>Facultad de Filosofía, Letras<br>y Ciencias de la Educación</p><strong>Universidad Central del Ecuador</strong></aside>
-    </div></section>
-
-    <section class="section wrap" id="certificaciones" aria-labelledby="certificaciones-titulo"><div class="section-heading reveal"><p class="eyebrow section-label">05 / FORMACIÓN COMPLEMENTARIA</p><div class="heading-row"><h2 id="certificaciones-titulo">Aprendizaje que continúa<span class="accent">.</span></h2><p>Un espacio para incorporar certificados, documentos y enlaces de verificación cuando estén disponibles.</p></div></div><div class="cert-grid" id="cert-grid"><article class="cert-card"><span class="cert-icon" aria-hidden="true">▥</span><div><span class="badge">Certificado · 40 horas</span><h3>Microsoft Power BI Básico Intermedio</h3><p>Expertos Soluciones Integrales · Ministerio de Trabajo del Ecuador (12 de noviembre de 2026 · Cód. MDT-OC-1376418).</p><a class="text-link" href="https://drive.google.com/file/d/1VCEN4g-Rso3xqHl7Y8VoDvK5FZIxfyoo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Ver certificado ↗</a></div></article></div></section>
-
-    <section class="contact-section" id="contacto" aria-labelledby="contacto-titulo"><div class="wrap contact-inner"><div><p class="eyebrow section-label">06 / CONECTEMOS</p><h2 id="contacto-titulo">El aprendizaje se comparte.</h2><p>Encuentra aquí mis perfiles y espacios académicos.</p></div><div id="contact-links" class="contact-links"><a class="contact-link" href="https://github.com/ISAACJC120" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div></section>
+    <!-- 05 / CONTACTO -->
+    <section class="contact-section" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="wrap contact-inner">
+        <div>
+          <p class="eyebrow section-label">05 / CONECTEMOS</p>
+          <h2 id="contacto-titulo">El aprendizaje se comparte.</h2>
+          <p>Encuentra aquí mis perfiles y espacios académicos.</p>
+        </div>
+        <div id="contact-links" class="contact-links">
+          <a class="contact-link" href="https://github.com/ISAACJC120" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-inner"><div><strong>Isaac Chávez</strong><p>Portafolio Digital de Estadística · Universidad Central del Ecuador</p><small>© <span id="year">2026</span> · Aprender, analizar, compartir.</small></div><nav aria-label="Navegación del pie de página"><a href="#inicio">Volver al inicio ↑</a><a href="#certificaciones">Certificaciones</a><a href="https://github.com/ISAACJC120/portafolio-estadistica" target="_blank" rel="noopener noreferrer">Código del sitio ↗</a></nav></div></footer>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Isaac Chávez</strong>
+        <p>Portafolio Digital de Estadística · Universidad Central del Ecuador</p>
+        <small>© <span id="year">2026</span> · Aprender, analizar, compartir.</small>
+      </div>
+      <nav aria-label="Navegación del pie de página">
+        <a href="#inicio">Volver al inicio ↑</a>
+        <a href="#perfil">Hoja de vida</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="https://github.com/ISAACJC120/portafolio-estadistica" target="_blank" rel="noopener noreferrer">Código del sitio ↗</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
