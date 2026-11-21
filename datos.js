@@ -20,7 +20,7 @@ window.PORTAFOLIO = {
       entidad: "Expertos Soluciones Integrales · Ministerio de Trabajo del Ecuador (40 horas · Cód. MDT-OC-1376418)",
       fecha: "12 de noviembre de 2026",
       imagen: "",
-      pdfUrl: "./recursos/certificado-power-bi.pdf",
+      pdfUrl: "https://drive.google.com/file/d/1VCEN4g-Rso3xqHl7Y8VoDvK5FZIxfyoo/view?usp=drive_link",
       verificacionUrl: ""
     }
   ]
